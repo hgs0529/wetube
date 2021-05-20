@@ -1,0 +1,8 @@
+extends base
+
+block content 
+  h4 Add Video
+  form(method="post") 
+    input(type="text" name="title")
+    input(type="number", name="rating" max=5)
+    input(type="submit", value="Create")
