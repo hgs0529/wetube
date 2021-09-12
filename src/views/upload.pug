@@ -2,7 +2,10 @@ extends base
 
 block content 
   h4 Add Video
-  form(method="post") 
-    input(type="text" name="title")
-    input(type="number", name="rating" max=5)
-    input(type="submit", value="Create")
+  form(method="post", enctype="multipart/form-data") 
+    label(for="vidoe") Video File
+    input(type="file", id="video", required, name="video", accept="video/*")
+    input(type="text" placeholder="Title" name="title")
+    input(type="text" placeholder="Description" name="description")
+    input(type="text" placeholder="Hashtags, sperated by comma." name="hashtags")
+    input(type="submit", value="Upload Video")

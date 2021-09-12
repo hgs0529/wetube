@@ -14,5 +14,5 @@ built with nodeJS
 
 /videos/:id -> see video
 /videos/:id/edit -> edit video
-/videos/:id/delete -> delete vidoe
+/videos/:id/delete -> delete video
 /videos/upload -> upload video
